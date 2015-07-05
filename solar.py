@@ -34,7 +34,7 @@ timenow = now - timedelta(seconds=now.second,
 
 download = "https://monitoringapi.solaredge.com/equipment/"+sideid+"/"+serial+"/data.xml?startTime="+str(minusfive)+"&endTime="+str(timenow)+"&api_key="+apikey
 
-print "https://monitoringapi.solaredge.com/equipment/"+sideid+"/"+serial+"/data.xml?startTime="+str(minusfive)+"&endTime="+str(timenow)+"&api_key="+apikey
+print download
 
 urllib.urlretrieve (download, "/home/pi/domoticz/scripts/data.xml")
 
